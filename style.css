@@ -1,0 +1,412 @@
+:root {
+    --Light-orange: hsl(15, 100%, 70%);           /* work */ 
+    --Soft-blue: hsl(195, 74%, 62%);           /* play */
+    --Light-red: hsl(348, 100%, 68%);           /* study */
+    --Lime-green: hsl(145, 58%, 55%);        /*  exercise */
+    --Violet: hsl(264, 64%, 52%);       /* social */
+    --Soft-orange: hsl(43, 84%, 65%);       /* self-care */
+    
+    --Blue: hsl(246, 80%, 60%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 375px) {
+    body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Very-dark-blue);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.whole {
+    width: 85%;
+    height: 100%;
+    margin: 70px 30px;
+}
+
+.radius {
+    border-radius: 15px;
+}
+
+.back-color {
+    background-color: var(--Dark-blue);
+}
+
+.jeremy {
+    width: 100%;
+    height: 200px;
+}
+
+.full-name {
+    width: 100%;
+    height: 65%;
+    background-color: var(--Blue);
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    margin: 28px 0 28px 30px;
+}
+
+.jeremy-img {
+    border: 3px white solid;
+    border-radius: 50%;
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+    margin: 28px 30px 28px 0px;
+}
+
+.report {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--Pale-Blue);
+}
+
+.jeremy-robson {
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.days {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--Pale-Blue);
+    font-size: 18px;
+}
+
+.margin-top {
+    margin: 23px 0;
+}
+
+.container {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.work {
+    background-color: var(--Light-orange);
+}
+
+.play {
+    background-color: var(--Soft-blue);
+}
+
+.study {
+    background-color: var(--Light-red);
+}
+
+.exercise {
+    background-color: var(--Lime-green);
+}
+
+.social {
+    background-color: var(--Violet);
+}
+
+.self-care {
+    background-color: var(--Soft-orange);
+}
+
+.icon,
+.man-icon,
+.icon-bug-one,
+.icon-bug-two {
+    position: relative;
+    left: 70%;
+    top: -15px;
+}
+
+.container-child {
+    margin-top: -48px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+#exercise-bug {
+    margin-top: -28px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+#social-bug {
+    margin-top: -68px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3; 
+}
+
+#self-bug {
+    margin-top: -38px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;     
+}
+
+.container-hour {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.hour-left {
+    width: 35%;
+    height: 40%;
+    margin: 27px 0px;
+}
+
+.hour-title {
+    font-size: 16px;
+}
+
+.num-hours {
+    font-weight: 200;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.hour-right {
+    text-align: right;
+    width: 70%;
+    height: 40%;
+    margin: 27px 0px;
+    color: var(--Pale-Blue);
+}
+
+.last-hours {
+    margin-top: 20px;
+    font-size: 16px;
+}
+}
+
+
+
+
+@media (min-width: 1440px) {
+    header {
+        width: 27%;
+        height: 100%
+    }
+
+    .whole {
+        width: 75%;
+        height: 550px;
+        margin: 9% 11.5%;
+        display: flex;
+        flex-direction: row;
+        gap: 25px
+    }
+
+    .jeremy {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: sticky;
+    }
+
+    .full-name {
+        display: flex;
+        flex-direction: column;
+        gap: unset;
+    }
+
+    .left {
+        width: 100%;
+        height: 30%;
+        margin: 40px 0 22px 50px;
+    }
+    
+    .jeremy-img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .right {
+        width: 100%;
+        height: 70%;
+        margin: 10px 50px 28px 0px;
+    }
+    
+    .report {
+        margin-top: 5px;
+        margin-left: 50px;
+        font-size: 18px;
+        color: var(--Pale-Blue);
+    }
+    
+    .jeremy-robson {
+        margin-top: 5px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-weight: 200;
+    }
+
+    .days {
+        width: 70%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        color: var(--Pale-Blue);
+        font-size: 18px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .margin-top {
+        margin-top: 10px;
+    }
+
+    main {
+        width: 73%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #first-column,
+    #second-column {
+        width: 100%;
+        height: 49%;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: unset;
+        overflow: hidden;
+    }
+
+    .icon {
+        position: relative;
+        left: 58%;
+        top: -15px;
+    }
+
+    .man-icon {
+        position: relative;
+        left: 58%;
+        top: 0px;
+    }
+
+    .icon-bug-one,
+    .icon-bug-two {
+        position: relative;
+        left: 62%;
+        top: -15px;
+    }
+
+    .container-child {
+        margin-top: -35px;
+    }
+
+    #exercise-bug {
+        margin-top: -15px;
+    }
+
+    #social-bug {
+        margin-top: -59px;
+    }
+    
+    #self-bug {
+        margin-top: -25px;     
+    }
+
+    .container-hour {
+        display: unset
+    }
+
+    .hour-left {
+        width: 100%;
+        height: 40%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .hour-title {
+        font-size: 18px;
+    }
+
+    .num-hours {
+        font-weight: 200;
+        margin-top: 30px;
+        font-size: 45px;
+    }
+
+    .hour-right {
+        text-align: left;
+        width: 100%;
+        height: 40%;
+        margin: 0px;
+        color: var(--Pale-Blue);
+    }
+    
+    .last-hours {
+        margin-left: 30px;
+        margin-top: -30px;
+        font-size: 16px;
+    }
+
+    .three-dot {
+        position: relative;
+        top: -135px;
+        left: 190px;
+    }
+
+    .margin-top:hover {
+        cursor: pointer;
+        color: rgb(255, 255, 255)
+    } 
+
+    .container-child:hover,
+    #exercise-bug:hover,
+    #social-bug:hover,
+    #self-bug:hover {
+        cursor: pointer;
+        background-color: hsl(236, 33%, 40%);
+    }
+}

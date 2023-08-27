@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Time tracking dashboard</title>
+</head>
+<body>
+  <div class="whole">
+    <header>
+      <div class="jeremy back-color radius">
+        <div class="full-name radius">
+          <div class="left">
+            <img class="jeremy-img" src="./images/image-jeremy.png" width="75px" height="75px">
+          </div>
+          <div class="right">
+            <p class="report">Report for</p>
+            <p class="jeremy-robson">Jeremy Robson</p>
+          </div>
+        </div>
+
+        <div class="days radius">
+          <p class='margin-top' id="daily">Daily</p>
+          <p class='margin-top' id="weekly">Weekly</p>
+          <p class='margin-top' id="monthly">Monthly</p>
+        </div> 
+      </div>
+    </header>
+
+    <main>
+      <div id="first-column">
+      <!-- Work -->
+      <div class='work container radius'>
+        <img class="icon" src="./images/icon-work.svg">
+        <div class="container-child radius back-color">
+          <div class="container-hour">
+            <div class="hour-left">
+              <p class="hour-title">Work</p>
+              <p id='work-hour' class="num-hours">32hrs</p>
+            </div>
+
+            <div class="hour-right">
+              <svg class="three-dot" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#bdc1ff" fill-rule="evenodd"/></svg>
+              <p id='work-last-hour' class="last-hours">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Play -->
+      <div class='play container radius'>
+        <img class="icon" src="./images/icon-play.svg">
+        <div class="container-child radius back-color">
+          <div class="container-hour">
+            <div class="hour-left">
+              <p class="hour-title">Play</p>
+              <p id='play-hour' class="num-hours">10hrs</p>
+            </div>
+
+            <div class="hour-right">
+              <svg class="three-dot" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#bdc1ff" fill-rule="evenodd"/></svg>
+              <p id='play-last-hour' class="last-hours">Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Study -->
+      <div class='study container radius'>
+        <img class="icon" src="./images/icon-study.svg">
+        <div class="container-child radius back-color">
+          <div class="container-hour">
+            <div class="hour-left">
+              <p class="hour-title">Study</p>
+              <p id='study-hour' class="num-hours">4hrs</p>
+            </div>
+
+            <div class="hour-right">
+              <svg class="three-dot" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#bdc1ff" fill-rule="evenodd"/></svg>
+              <p id='study-last-hour' class="last-hours">Last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div id="second-column">
+      <!-- Exercise -->
+        <div class='exercise container radius'>
+        <img class="man-icon" src="./images/icon-exercise.svg">
+        <div id='exercise-bug' class="radius back-color">
+          <div class="container-hour">
+            <div class="hour-left">
+              <p class="hour-title">Exercise</p>
+              <p id='exercise-hour' class="num-hours">4hrs</p>
+            </div>
+            
+            <div class="hour-right">
+              <svg class="three-dot" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#bdc1ff" fill-rule="evenodd"/></svg>
+              <p id='exercise-last-hour' class="last-hours">Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Social -->
+      <div class='social container radius'>
+        <img class="icon-bug-one" src="./images/icon-social.svg">
+        <div id='social-bug' class="radius back-color">
+          <div class="container-hour">
+            <div class="hour-left">
+              <p class="hour-title">Social</p>
+              <p id='social-hour' class="num-hours">5hrs</p>
+            </div>
+
+            <div class="hour-right">
+              <svg class="three-dot" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#bdc1ff" fill-rule="evenodd"/></svg>
+              <p id='social-last-hour' class="last-hours">Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Self Care -->
+      <div class='self-care container radius'>
+        <img class="icon-bug-two" src="./images/icon-self-care.svg">
+        <div id='self-bug' class="radius back-color">
+          <div class="container-hour">
+            <div class="hour-left">
+              <p class="hour-title">Self Care</p>
+              <p id='self-hour' class="num-hours">2hrs</p>
+            </div>
+
+            <div class="hour-right">
+              <svg class="three-dot" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#bdc1ff" fill-rule="evenodd"/></svg>
+              <p id='self-last-hour' class="last-hours">Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
